@@ -135,13 +135,13 @@ function Home() {
         <Card bg="secondary" text="white" className="text-center"> 
           <Card.Body>
             <Card.Title>Total Cases</Card.Title>
-            <Card.Text>
+            <Card.Text className="h1">
              {/* <h1>{latest.cases}</h1> */}
-             <h1><NumberFormat 
+             <NumberFormat 
               value={latest.cases}
               displayType={"text"}
               thousandSeparator={true}
-             /></h1>
+             />
             </Card.Text>
           </Card.Body>
           <Card.Footer >
@@ -151,13 +151,13 @@ function Home() {
         <Card bg="danger" text="white" className="text-center">
           <Card.Body>
             <Card.Title>Deaths</Card.Title>
-            <Card.Text>
+            <Card.Text className="h1">
              {/* <h1>{latest.deaths}</h1> */}
-             <h1><NumberFormat 
+             <NumberFormat 
               value={latest.deaths}
               displayType={"text"}
               thousandSeparator={true}
-             /></h1>
+             />
             </Card.Text>
           </Card.Body>
           <Card.Footer>
@@ -167,13 +167,12 @@ function Home() {
         <Card bg="success" text="light" className="text-center">
           <Card.Body>
             <Card.Title>Recovered</Card.Title>
-            <Card.Text>
-              {/* <h1>{latest.recovered}</h1> */}
-              <h1><NumberFormat 
+            <Card.Text className="h1">
+              <NumberFormat 
               value={latest.recovered}
               displayType={"text"}
               thousandSeparator={true}
-             /></h1>
+             />
             </Card.Text>
           </Card.Body>
           <Card.Footer>
